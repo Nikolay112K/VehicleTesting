@@ -7,8 +7,8 @@ namespace VehicleTesting
     {
         static void Main(string[] args)
         {
-            Car a1 = new Car();
-            a1.CarTesting();
+            Car a = new Car();
+            a.CarTesting();
         }
     }
 }
