@@ -1,5 +1,8 @@
 ﻿using System;
-using VehicleTesting.Classes;
+using VehicleTesting.AirVehicle;
+using VehicleTesting.GroundVehicles;
+using VehicleTesting.Vehicle;
+using VehicleTesting.WaterVehicle;
 
 namespace VehicleTesting
 {

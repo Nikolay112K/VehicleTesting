@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace VehicleTesting.Classes
+namespace VehicleTesting.Vehicle
 {
     public class TechnicalVehicle
     {
