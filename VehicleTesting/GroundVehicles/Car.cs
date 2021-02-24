@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using VehicleTesting.SpareParts;
 using VehicleTesting.Vehicle;
 
 namespace VehicleTesting.GroundVehicles
 {
     public class Car : TechnicalVehicle
     {
-        public Wheels Wheels { get; set; }
+        public Wheels WheelsObj { get; set; }
         public static int CountOfRam = 1;
         public string EngineHealth;
         public string Transmission;
@@ -34,6 +35,14 @@ namespace VehicleTesting.GroundVehicles
             this.TankCapacity = TankCapacity;
             this.QualityOfSparkPlug = QualityOfSparkPlug;
             this.BatteryChargeInPercent = BatteryChargeInPercent;
+
+            this.WheelsObj = new Wheels();
+        }
+
+        public void HowManyWheels()
+        {
+            Console.WriteLine(WheelsObj.NumberOfWheels);
+            
         }
         public void CarTesting()
         {

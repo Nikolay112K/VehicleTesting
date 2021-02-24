@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace VehicleTesting.GroundVehicles
+namespace VehicleTesting.SpareParts
 {
     public class Wheels
     {

@@ -7,7 +7,6 @@ namespace VehicleTesting.GroundVehicles
 {
     public class Bike : TechnicalVehicle
     {
-        public Wheels Wheels { get; set; }
         public int Gears;
         public int Seat;
         public string RamHealth;

@@ -8,6 +8,5 @@ namespace VehicleTesting.GroundVehicles
     public class KickScooter : TechnicalVehicle
     {
         public string MotorHealth;
-        public Wheels Wheels { get; set; }
     }
 }

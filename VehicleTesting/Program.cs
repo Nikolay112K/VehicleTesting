@@ -1,6 +1,7 @@
 ﻿using System;
 using VehicleTesting.AirVehicle;
 using VehicleTesting.GroundVehicles;
+using VehicleTesting.SpareParts;
 using VehicleTesting.Vehicle;
 using VehicleTesting.WaterVehicle;
 
@@ -12,6 +13,7 @@ namespace VehicleTesting
         {
             Car a = new Car();
             a.CarTesting();
+            a.HowManyWheels();
         }
     }
 }

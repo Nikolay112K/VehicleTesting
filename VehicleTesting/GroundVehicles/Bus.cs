@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using VehicleTesting.SpareParts;
 using VehicleTesting.Vehicle;
 
 namespace VehicleTesting.GroundVehicles
