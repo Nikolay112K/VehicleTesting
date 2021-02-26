@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using VehicleTesting.SpareParts;
 using VehicleTesting.Vehicle;
 
@@ -9,14 +7,15 @@ namespace VehicleTesting.GroundVehicles
     public class Car : TechnicalVehicle
     {
         public Wheels WheelsObj { get; set; }
+        public Roof RoofObj { get; set; }
+        public WaterProof WaterProofObj { get; set; }
+        public Doors DoorsObj { get; set; }
+        public Seats SeatsObj { get; set; }
+        public Odometr OdometrObj { get; set; }
+        public Mirrors MirrorsObj { get; set; }
         public static int CountOfRam = 1;
         public string EngineHealth;
         public string Transmission;
-        public int Doors;
-        public double Odometer;
-        public byte Seats;
-        public bool Roof;
-        public bool WaterProof;
         public double MaxSpeed;
         public double TankCapacity;
         public string QualityOfSparkPlug;
@@ -26,23 +25,28 @@ namespace VehicleTesting.GroundVehicles
         {
             this.EngineHealth = EngineHealth;
             this.Transmission = Transmission;
-            this.Odometer = Odometer;
-            this.Doors = Doors;
-            this.Seats = Seats;
-            this.Roof = Roof;
-            this.WaterProof = WaterProof;
             this.MaxSpeed = MaxSpeed;
             this.TankCapacity = TankCapacity;
             this.QualityOfSparkPlug = QualityOfSparkPlug;
             this.BatteryChargeInPercent = BatteryChargeInPercent;
 
+            this.MirrorsObj = new Mirrors();
+            this.OdometrObj = new Odometr();
+            this.SeatsObj = new Seats();
+            this.DoorsObj = new Doors();
+            this.WaterProofObj = new WaterProof();
+            this.RoofObj = new Roof();
             this.WheelsObj = new Wheels();
         }
 
         public void HowManyWheels()
         {
             Console.WriteLine(WheelsObj.NumberOfWheels);
-            
+
+        }
+        public void IsRoofOpend()
+        {
+            Console.WriteLine(RoofObj.IsRoofOpend);
         }
         public void CarTesting()
         {
