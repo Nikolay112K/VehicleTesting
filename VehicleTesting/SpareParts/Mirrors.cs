@@ -6,6 +6,15 @@ namespace VehicleTesting.SpareParts
 {
     public class Mirrors
     {
-        public byte HowManyMirrors;
+        public byte HowManyMirrors = 3;
+        public bool MirrorIsClear = true;
+        public void StatusOfMirror()
+        {
+            Console.WriteLine(MirrorIsClear);
+        }
+        public Mirrors()
+        {
+
+        }
     }
 }
