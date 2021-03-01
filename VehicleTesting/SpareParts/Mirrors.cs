@@ -12,9 +12,5 @@ namespace VehicleTesting.SpareParts
         {
             Console.WriteLine(MirrorIsClear);
         }
-        public Mirrors()
-        {
-
-        }
     }
 }

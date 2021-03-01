@@ -17,5 +17,9 @@ namespace VehicleTesting.SpareParts
             Console.WriteLine("Roof is closed.");
             RoofHealth--;
         }
+        public void RoofStatus()
+        {
+            Console.WriteLine($"Roof have {RoofHealth} Health point");
+        }
     }
 }

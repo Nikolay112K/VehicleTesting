@@ -14,6 +14,8 @@ namespace VehicleTesting
             Car a = new Car();
             a.CarTesting();
             a.HowManyWheels();
+            Roof a1 = new Roof();
+            a1.RoofStatus();
         }
     }
 }
