@@ -20,8 +20,8 @@ namespace VehicleTesting.GroundVehicles
         public double TankCapacity;
         public string QualityOfSparkPlug;
         public byte BatteryChargeInPercent;
-        public Car() : this("Unknown", "Unknown", 100, 1.5, "100", 100) { }
-        public Car(string EngineHealth, string Transmission, double MaxSpeed, double TankCapacity, string QualityOfSparkPlug, byte BatteryChargeInPercent)
+        //public Car() : this("Unknown", "Unknown", 100, 1.5, "100", 100, 4) { }
+        public Car(string EngineHealth, string Transmission, double MaxSpeed, double TankCapacity, string QualityOfSparkPlug, byte BatteryChargeInPercent,int nubmerOfWheels)
         {
             this.EngineHealth = EngineHealth;
             this.Transmission = Transmission;
@@ -36,12 +36,12 @@ namespace VehicleTesting.GroundVehicles
             this.DoorsObj = new Doors();
             this.WaterProofObj = new WaterProof();
             this.RoofObj = new Roof();
-            this.WheelsObj = new Wheels();
+            this.WheelsObj = new Wheels(nubmerOfWheels);
         }
 
         public void HowManyWheels()
         {
-            Console.WriteLine(WheelsObj.NumberOfWheels);
+            WheelsObj.GetNumberOFWheels();
         }
         public void CarTesting()
         {

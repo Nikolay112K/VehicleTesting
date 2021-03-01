@@ -11,11 +11,9 @@ namespace VehicleTesting
     {
         static void Main(string[] args)
         {
-            Car a = new Car();
+            Car a = new Car("Unknown", "Unknown", 100, 1.5, "100", 100, 4);
             a.CarTesting();
             a.HowManyWheels();
-            Roof a1 = new Roof();
-            a1.RoofStatus();
         }
     }
 }

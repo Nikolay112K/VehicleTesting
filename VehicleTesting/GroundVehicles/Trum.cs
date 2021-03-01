@@ -30,7 +30,7 @@ namespace VehicleTesting.GroundVehicles
             this.SeatsObj = new Seats();
             this.RoofObj = new Roof();
             this.DoorsObj = new Doors();
-            this.WheelsObj = new Wheels();
+            this.WheelsObj = new Wheels(8);
         }
     }
 }

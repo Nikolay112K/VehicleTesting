@@ -6,14 +6,14 @@ namespace VehicleTesting.SpareParts
 {
     public class Wheels
     {
-        private int NumberOfWheels = 4;
+        private int NumberOfWheels;
         public void GetNumberOFWheels()
         {
             Console.WriteLine($"Number of wheels is{NumberOfWheels}");
         }
-        public Wheels()
+        public Wheels(int numberOfWheels)
         {
-
+            this.NumberOfWheels = numberOfWheels;
         }
     }
 }
