@@ -10,7 +10,7 @@ namespace VehicleTesting.GroundVehicles
     {
         public string DCMotorHealth;
         public int Window;
-        public Wheels Wheels { get; set; }
+        public Wheels WheelsObj { get; set; }
         public string ArrowHealth;
         public string EngineHealth;
         public string BodyHealth;

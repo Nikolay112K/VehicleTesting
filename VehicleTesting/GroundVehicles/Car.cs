@@ -42,7 +42,6 @@ namespace VehicleTesting.GroundVehicles
         public void HowManyWheels()
         {
             Console.WriteLine(WheelsObj.NumberOfWheels);
-
         }
         public void CarTesting()
         {

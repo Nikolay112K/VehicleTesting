@@ -6,7 +6,7 @@ namespace VehicleTesting.SpareParts
 {
     public class Roof
     {
-        public int RoofHealth = 10000;
+        private int RoofHealth = 10000;
         public void RoofIsOpend()
         {
             Console.WriteLine("Roof is opend.");
