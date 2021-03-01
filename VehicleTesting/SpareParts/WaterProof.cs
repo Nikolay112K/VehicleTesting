@@ -7,6 +7,9 @@ namespace VehicleTesting.SpareParts
     public class WaterProof
     {
         public bool IsItWaterProof;
+        public WaterProof()
+        {
 
+        }
     }
 }

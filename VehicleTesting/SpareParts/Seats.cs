@@ -6,8 +6,8 @@ namespace VehicleTesting.SpareParts
 {
     public class Seats
     {
-        public byte CountOfSeats = 4;
-        public int SeatsHealth = 100000;
+        private byte CountOfSeats;
+        private int SeatsHealth;
         public bool BuckledUp = false;
         public void SomebodySeat()
         {
@@ -22,6 +22,10 @@ namespace VehicleTesting.SpareParts
         {
             BuckledUp = true;
             Console.WriteLine("You are buckled up.");
+        }
+        public Seats(int seatsHealth)
+        {
+            this.SeatsHealth = seatsHealth;
         }
     }
 }

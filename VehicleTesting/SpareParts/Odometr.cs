@@ -7,6 +7,9 @@ namespace VehicleTesting.SpareParts
     public class Odometr
     {
         public double OdometerCount;
+        public Odometr()
+        {
 
+        }
     }
 }

@@ -21,5 +21,9 @@ namespace VehicleTesting.SpareParts
         {
             Console.WriteLine($"Roof have {RoofHealth} Health point");
         }
+        public Roof()
+        {
+
+        }
     }
 }

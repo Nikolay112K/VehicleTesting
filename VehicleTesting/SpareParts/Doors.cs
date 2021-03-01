@@ -6,8 +6,8 @@ namespace VehicleTesting.SpareParts
 {
     public class Doors
     {
-        public int CountOfDoors = 4;
-        public int DoorsHealth = 1000;
+        private int CountOfDoors;
+        private int DoorsHealth;
         public void DoorIsOpen()
         {
             Console.WriteLine("Door is Opend.");
@@ -16,6 +16,10 @@ namespace VehicleTesting.SpareParts
         {
             Console.WriteLine("Door is Closed");
             DoorsHealth--;
+        }
+        public Doors()
+        {
+
         }
     }
 }
