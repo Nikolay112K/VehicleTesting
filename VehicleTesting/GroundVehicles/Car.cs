@@ -44,10 +44,6 @@ namespace VehicleTesting.GroundVehicles
             Console.WriteLine(WheelsObj.NumberOfWheels);
 
         }
-        public void IsRoofOpend()
-        {
-            Console.WriteLine(RoofObj.IsRoofOpend);
-        }
         public void CarTesting()
         {
             bool WillTheCarStart;
