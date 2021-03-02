@@ -6,20 +6,20 @@ namespace VehicleTesting.GroundVehicles
 {
     public class Car : TechnicalVehicle
     {
-        public Wheels WheelsObj { get; set; }
-        public Roof RoofObj { get; set; }
-        public WaterProof WaterProofObj { get; set; }
-        public Doors DoorsObj { get; set; }
-        public Seats SeatsObj { get; set; }
-        public Odometr OdometrObj { get; set; }
-        public Mirrors MirrorsObj { get; set; }
-        public static int CountOfRam = 1;
-        public string EngineHealth;
-        public string Transmission;
-        public double MaxSpeed;
-        public double TankCapacity;
-        public string QualityOfSparkPlug;
-        public byte BatteryChargeInPercent;
+        private Wheels WheelsObj { get; set; }
+        private Roof RoofObj { get; set; }
+        private WaterProof WaterProofObj { get; set; }
+        private Doors DoorsObj { get; set; }
+        private Seats SeatsObj { get; set; }
+        private Odometr OdometrObj { get; set; }
+        private Mirrors MirrorsObj { get; set; }
+        private static int CountOfRam = 1;
+        private string EngineHealth;
+        private string Transmission;
+        private double MaxSpeed;
+        private double TankCapacity;
+        private string QualityOfSparkPlug;
+        private byte BatteryChargeInPercent;
         //public Car() : this("Unknown", "Unknown", 100, 1.5, "100", 100, 4) { }
         public Car(string EngineHealth, string Transmission, double MaxSpeed, double TankCapacity, string QualityOfSparkPlug, byte BatteryChargeInPercent,int nubmerOfWheels,int seatsHealth, int roofHealth, byte howManyMirrors,int countOfDoors,int doorsHealth,byte countOfSeats)
         {
