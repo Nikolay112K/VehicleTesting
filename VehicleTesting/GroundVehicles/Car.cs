@@ -39,9 +39,20 @@ namespace VehicleTesting.GroundVehicles
             this.WheelsObj = new Wheels(nubmerOfWheels);
         }
 
+        public void Acceleration()
+        {
+            if (MaxSpeed > 250 && WheelsObj.GetNumberOFWheels() == 6)
+            {
+                Console.WriteLine("You will achive 100 km per 5 sec");
+            }
+            else
+            {
+                Console.WriteLine("You are not to fast");
+            }
+        }
         public void IsThatATruck()
         {
-            if (MaxSpeed < 100 && TankCapacity > 2.5 && WheelsObj.GetNumberOFWheels() > 4 && DoorsObj.GetNumberOfDoors() >= 2)
+            if (MaxSpeed < 100 && TankCapacity > 2.5 && WheelsObj.GetNumberOFWheels() > 4 && DoorsObj.GetNumberOfDoors() == 2)
             {
                 Console.WriteLine("This is a TRUCK");
             }
