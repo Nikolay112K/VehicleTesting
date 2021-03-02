@@ -17,9 +17,10 @@ namespace VehicleTesting.SpareParts
             Console.WriteLine("Door is Closed");
             DoorsHealth--;
         }
-        public Doors()
+        public Doors(int countOfDoors, int doorsHealth)
         {
-
+            this.CountOfDoors = countOfDoors;
+            this.DoorsHealth = doorsHealth;
         }
     }
 }

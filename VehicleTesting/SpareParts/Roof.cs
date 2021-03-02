@@ -21,9 +21,9 @@ namespace VehicleTesting.SpareParts
         {
             Console.WriteLine($"Roof have {RoofHealth} Health point");
         }
-        public Roof()
+        public Roof(int roofHealth)
         {
-
+            this.RoofHealth = roofHealth;
         }
     }
 }

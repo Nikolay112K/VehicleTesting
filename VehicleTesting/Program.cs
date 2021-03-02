@@ -11,7 +11,7 @@ namespace VehicleTesting
     {
         static void Main(string[] args)
         {
-            Car a = new Car("Unknown", "Unknown", 100, 1.5, "100", 100, 4,10000);
+            Car a = new Car("Unknown", "Unknown", 100, 1.5, "100", 100, 4,10000,10000,3,4,10000);
             a.CarTesting();
             a.HowManyWheels();
         }

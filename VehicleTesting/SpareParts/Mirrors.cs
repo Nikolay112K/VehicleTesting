@@ -12,9 +12,9 @@ namespace VehicleTesting.SpareParts
         {
             Console.WriteLine(MirrorIsClear);
         }
-        public Mirrors()
+        public Mirrors(byte howManyMirrors)
         {
-
+            this.HowManyMirrors = howManyMirrors;
         }
     }
 }
