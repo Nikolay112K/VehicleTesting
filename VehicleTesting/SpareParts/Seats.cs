@@ -23,8 +23,9 @@ namespace VehicleTesting.SpareParts
             BuckledUp = true;
             Console.WriteLine("You are buckled up.");
         }
-        public Seats(int seatsHealth)
+        public Seats(int seatsHealth, byte countOfSeats)
         {
+            this.CountOfSeats = countOfSeats;
             this.SeatsHealth = seatsHealth;
         }
     }

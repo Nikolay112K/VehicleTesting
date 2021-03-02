@@ -27,7 +27,7 @@ namespace VehicleTesting.GroundVehicles
             this.OdometrObj = new Odometr();
             this.MirrorsObj = new Mirrors(3);
             this.WaterProofObj = new WaterProof();
-            this.SeatsObj = new Seats(10000);
+            this.SeatsObj = new Seats(10000,25);
             this.RoofObj = new Roof(10000);
             this.DoorsObj = new Doors(3,10000);
             this.WheelsObj = new Wheels(8);
